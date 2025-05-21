@@ -1,0 +1,9 @@
+Requirements
+
+ os
+ numpy 
+ nibabel 
+ matplotlib.pyplot
+ skimage.filters , threshold_otsu
+ scipy.ndimage , binary_dilation
+ shutil

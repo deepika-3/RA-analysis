@@ -1,0 +1,8 @@
+Requirements
+
+nibabel 
+ NumPy 
+ matplotlib.pyplot 
+ skikit image.filters , threshold_otsu
+ os
+ shutil

@@ -1,0 +1,42 @@
+import nibabel as nib
+import numpy as np
+import matplotlib.pyplot as plt
+from skimage.filters import threshold_otsu
+
+
+nii_image = nib.load("/content/3702_left_knee.nii.gz")
+image_data = nii_image.get_fdata()
+print(image_data)
+
+# Loading the .nii.gz file
+# Selecting a 2D slice from the 3D image (e.g., middle slice) in order to reduce computation
+# and complexicity
+
+slice_index = image_data.shape[2] // 2
+image_slice1 = image_data[:, :, slice_index]
+
+# Segmentation is dividing the image , seperating the object from foreground to background we have to
+# Perform simple thresholding (Otsu's method)
+
+thresh = threshold_otsu(image_slice1)
+binary_mask = image_slice1 > thresh
+
+# Display original slice and segmentation result
+plt.figure(figsize=(10, 5))
+
+plt.subplot(1, 2, 1)
+plt.imshow(image_slice1, cmap='gray')
+plt.title("Original Slice")
+plt.axis('off')
+
+plt.subplot(1, 2, 2)
+plt.imshow(binary_mask, cmap='gray')
+plt.title("Segmented Mask (Otsu)")
+plt.axis('off')
+
+plt.tight_layout()
+plt.show()
+
+import shutil
+
+shutil.make_archive("/content/RA_output", 'zip', "/content/sample_data/RA output")

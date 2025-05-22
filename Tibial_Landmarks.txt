@@ -1,0 +1,24 @@
+Expanded_2mm_Mask.nii.gz:
+  Medial Point: [40, 40, 92]
+  Lateral Point: [64, 40, 92]
+Expanded_4mm_Mask.nii.gz:
+  Medial Point: [40, 40, 95]
+  Lateral Point: [64, 40, 95]
+Original_Mask.nii.gz:
+  Medial Point: [40, 40, 89]
+  Lateral Point: [64, 40, 89]
+Randomized_Mask_1.nii.gz:
+  Medial Point: [40, 40, 89]
+  Lateral Point: [64, 40, 89]
+Randomized_Mask_2.nii.gz:
+  Medial Point: [40, 40, 89]
+  Lateral Point: [64, 40, 89]
+tibia_mask_expand2mm.nii.gz:
+  Medial Point: [0, 0, 215]
+  Lateral Point: [256, 0, 215]
+tibia_mask_expand4mm.nii.gz:
+  Medial Point: [0, 0, 215]
+  Lateral Point: [256, 0, 215]
+tibia_mask_original.nii.gz:
+  Medial Point: [0, 0, 215]
+  Lateral Point: [256, 0, 215]

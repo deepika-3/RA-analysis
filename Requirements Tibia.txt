@@ -1,0 +1,9 @@
+Requirements
+
+ os
+ zipfile
+ numpy 
+ nibabel 
+ scipy.ndimage ,
+binary_dilation, gaussian_filter, map_coordinates
+google.colab 
